@@ -45,7 +45,7 @@ namespace bmtc
         {
             editEmployeeDetails1.Hide();
             editUsers1.Hide();
-            //editBusDetails1.Hide();
+            editBusDetails1.Hide();
         }
     }
 }

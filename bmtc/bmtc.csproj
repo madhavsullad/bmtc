@@ -85,6 +85,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="searchBus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="searchBus.Designer.cs">
+      <DependentUpon>searchBus.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="editBusDetails.resx">
       <DependentUpon>editBusDetails.cs</DependentUpon>
     </EmbeddedResource>
@@ -112,6 +118,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="searchBus.resx">
+      <DependentUpon>searchBus.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

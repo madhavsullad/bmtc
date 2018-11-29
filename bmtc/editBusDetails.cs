@@ -19,6 +19,7 @@ namespace bmtc
         }
         private void btn_fetch_Click(object sender, EventArgs e)
         {
+            btn_fetch.Text = "Update";
             if (comboBox1.SelectedIndex == 0)
             {
                 SqlConnection con = new SqlConnection("Data Source=madhav-laptop\\madhavserver;Initial Catalog=bmtc;Integrated Security=True");
@@ -26,13 +27,47 @@ namespace bmtc
                 SqlDataAdapter sda = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
-                txt_regNo.Text = dt.Rows[0]["regNo"].ToString();
-                txt_type.Text = dt.Rows[0]["type"].ToString();
-                txt_stat.Text = dt.Rows[0]["status"].ToString();
-                txt_origin.Text = dt.Rows[0]["origin"].ToString();
-                txt_destn.Text = dt.Rows[0]["destination"].ToString();
-                txt_depot.Text = dt.Rows[0]["depot"].ToString();
+                bindingSource1.DataSource = dt;
+                dataGridView1.DataSource = bindingSource1;
             }
+            else if(comboBox1.SelectedIndex == 1)
+            {
+                SqlConnection con = new SqlConnection("Data Source=madhav-laptop\\madhavserver;Initial Catalog=bmtc;Integrated Security=True");
+                SqlCommand cmd = new SqlCommand("select * from bus where regNo = '" + txt_regNo.Text.ToUpper() + "'", con);
+                SqlDataAdapter sda = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                bindingSource1.DataSource = dt;
+                dataGridView1.DataSource = bindingSource1;
+                
+            }
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedIndex == 0)
+            {
+                label2.Show();
+                txt_busNo.Show();
+                label3.Hide();
+                txt_regNo.Hide();
+            }
+            else
+            {
+                label3.Show();
+                txt_regNo.Show();
+                label2.Hide();
+                txt_busNo.Hide();
+            }
+        }
+
+        private void editBusDetails_Load(object sender, EventArgs e)
+        {
+            label3.Hide();
+            txt_regNo.Hide();
+            label2.Hide();
+            txt_busNo.Hide();
+
         }
     }
 }
