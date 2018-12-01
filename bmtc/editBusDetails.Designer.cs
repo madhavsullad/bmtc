@@ -28,128 +28,223 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_busNo = new System.Windows.Forms.TextBox();
-            this.txt_regNo = new System.Windows.Forms.TextBox();
-            this.btn_fetch = new System.Windows.Forms.Button();
-            this.label9 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_reg = new System.Windows.Forms.TextBox();
+            this.txt_bus = new System.Windows.Forms.TextBox();
+            this.txt_type = new System.Windows.Forms.TextBox();
+            this.txt_origin = new System.Windows.Forms.TextBox();
+            this.txt_dest = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_depot = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_stat = new System.Windows.Forms.TextBox();
+            this.btn_FetchU = new System.Windows.Forms.Button();
+            this.btn_update = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(79, 78);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(218, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(79, 13);
+            this.label1.Size = new System.Drawing.Size(139, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Search Bus by:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.AllowDrop = true;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "BUS No.",
-            "Reg. No."});
-            this.comboBox1.Location = new System.Drawing.Point(164, 74);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 1;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.label1.Text = "Edit Bus Details";
             // 
             // label2
             // 
+            this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(306, 78);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(182, 129);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(51, 13);
-            this.label2.TabIndex = 2;
+            this.label2.Size = new System.Drawing.Size(73, 20);
+            this.label2.TabIndex = 1;
             this.label2.Text = "Bus No. :";
             // 
             // label3
             // 
+            this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(298, 78);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(182, 167);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Reg. No. :";
+            this.label3.Size = new System.Drawing.Size(51, 20);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Type :";
             // 
-            // txt_busNo
+            // label4
             // 
-            this.txt_busNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_busNo.Location = new System.Drawing.Point(374, 74);
-            this.txt_busNo.Name = "txt_busNo";
-            this.txt_busNo.Size = new System.Drawing.Size(121, 20);
-            this.txt_busNo.TabIndex = 9;
+            this.label4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(182, 203);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 20);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Origin :";
             // 
-            // txt_regNo
+            // label5
             // 
-            this.txt_regNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_regNo.Location = new System.Drawing.Point(374, 74);
-            this.txt_regNo.Name = "txt_regNo";
-            this.txt_regNo.Size = new System.Drawing.Size(121, 20);
-            this.txt_regNo.TabIndex = 10;
+            this.label5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(182, 237);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(98, 20);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "Destination :";
             // 
-            // btn_fetch
+            // label6
             // 
-            this.btn_fetch.Location = new System.Drawing.Point(225, 420);
-            this.btn_fetch.Name = "btn_fetch";
-            this.btn_fetch.Size = new System.Drawing.Size(124, 51);
-            this.btn_fetch.TabIndex = 16;
-            this.btn_fetch.Text = "Fetch";
-            this.btn_fetch.UseVisualStyleBackColor = true;
-            this.btn_fetch.Click += new System.EventHandler(this.btn_fetch_Click);
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(182, 88);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(75, 20);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Reg No. :";
             // 
-            // label9
+            // txt_reg
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(234, 13);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(107, 24);
-            this.label9.TabIndex = 17;
-            this.label9.Text = "BUS Details";
+            this.txt_reg.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_reg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_reg.Location = new System.Drawing.Point(298, 85);
+            this.txt_reg.Name = "txt_reg";
+            this.txt_reg.Size = new System.Drawing.Size(100, 26);
+            this.txt_reg.TabIndex = 6;
             // 
-            // dataGridView1
+            // txt_bus
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(51, 103);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(472, 294);
-            this.dataGridView1.TabIndex = 18;
+            this.txt_bus.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_bus.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_bus.Location = new System.Drawing.Point(298, 126);
+            this.txt_bus.Name = "txt_bus";
+            this.txt_bus.Size = new System.Drawing.Size(100, 26);
+            this.txt_bus.TabIndex = 7;
+            // 
+            // txt_type
+            // 
+            this.txt_type.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_type.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_type.Location = new System.Drawing.Point(298, 164);
+            this.txt_type.Name = "txt_type";
+            this.txt_type.Size = new System.Drawing.Size(100, 26);
+            this.txt_type.TabIndex = 8;
+            // 
+            // txt_origin
+            // 
+            this.txt_origin.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_origin.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_origin.Location = new System.Drawing.Point(298, 200);
+            this.txt_origin.Name = "txt_origin";
+            this.txt_origin.Size = new System.Drawing.Size(100, 26);
+            this.txt_origin.TabIndex = 9;
+            // 
+            // txt_dest
+            // 
+            this.txt_dest.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_dest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_dest.Location = new System.Drawing.Point(298, 234);
+            this.txt_dest.Name = "txt_dest";
+            this.txt_dest.Size = new System.Drawing.Size(100, 26);
+            this.txt_dest.TabIndex = 10;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(182, 272);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(61, 20);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Depot :";
+            // 
+            // txt_depot
+            // 
+            this.txt_depot.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_depot.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_depot.Location = new System.Drawing.Point(298, 269);
+            this.txt_depot.Name = "txt_depot";
+            this.txt_depot.Size = new System.Drawing.Size(100, 26);
+            this.txt_depot.TabIndex = 12;
+            // 
+            // label8
+            // 
+            this.label8.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(182, 309);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(64, 20);
+            this.label8.TabIndex = 13;
+            this.label8.Text = "Status :";
+            // 
+            // txt_stat
+            // 
+            this.txt_stat.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txt_stat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_stat.Location = new System.Drawing.Point(298, 306);
+            this.txt_stat.Name = "txt_stat";
+            this.txt_stat.Size = new System.Drawing.Size(100, 26);
+            this.txt_stat.TabIndex = 14;
+            // 
+            // btn_FetchU
+            // 
+            this.btn_FetchU.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_FetchU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_FetchU.Location = new System.Drawing.Point(165, 380);
+            this.btn_FetchU.Name = "btn_FetchU";
+            this.btn_FetchU.Size = new System.Drawing.Size(113, 50);
+            this.btn_FetchU.TabIndex = 15;
+            this.btn_FetchU.Text = "Fetch";
+            this.btn_FetchU.UseVisualStyleBackColor = true;
+            this.btn_FetchU.Click += new System.EventHandler(this.btn_FetchUpdate_Click);
+            // 
+            // btn_update
+            // 
+            this.btn_update.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.btn_update.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_update.Location = new System.Drawing.Point(296, 380);
+            this.btn_update.Name = "btn_update";
+            this.btn_update.Size = new System.Drawing.Size(113, 50);
+            this.btn_update.TabIndex = 16;
+            this.btn_update.Text = "Update";
+            this.btn_update.UseVisualStyleBackColor = true;
+            this.btn_update.Click += new System.EventHandler(this.btn_update_Click);
             // 
             // editBusDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.btn_fetch);
-            this.Controls.Add(this.txt_regNo);
-            this.Controls.Add(this.txt_busNo);
+            this.Controls.Add(this.txt_stat);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txt_depot);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txt_dest);
+            this.Controls.Add(this.txt_origin);
+            this.Controls.Add(this.txt_type);
+            this.Controls.Add(this.txt_bus);
+            this.Controls.Add(this.txt_reg);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.btn_FetchU);
+            this.Controls.Add(this.btn_update);
             this.Name = "editBusDetails";
             this.Size = new System.Drawing.Size(574, 501);
-            this.Load += new System.EventHandler(this.editBusDetails_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,14 +253,21 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_busNo;
-        private System.Windows.Forms.TextBox txt_regNo;
-        private System.Windows.Forms.Button btn_fetch;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txt_reg;
+        private System.Windows.Forms.TextBox txt_bus;
+        private System.Windows.Forms.TextBox txt_type;
+        private System.Windows.Forms.TextBox txt_origin;
+        private System.Windows.Forms.TextBox txt_dest;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txt_depot;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txt_stat;
+        private System.Windows.Forms.Button btn_FetchU;
+        private System.Windows.Forms.Button btn_update;
     }
 }

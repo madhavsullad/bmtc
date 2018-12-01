@@ -47,6 +47,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="addBus.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addBus.Designer.cs">
+      <DependentUpon>addBus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addEmp.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addEmp.Designer.cs">
+      <DependentUpon>addEmp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="addUser.Designer.cs">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="editBusDetails.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -77,20 +95,29 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form3.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form3.Designer.cs">
-      <DependentUpon>Form3.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="searchBus.cs">
-      <SubType>UserControl</SubType>
+    <Compile Include="search.cs">
+      <SubType>Form</SubType>
     </Compile>
-    <Compile Include="searchBus.Designer.cs">
-      <DependentUpon>searchBus.cs</DependentUpon>
+    <Compile Include="search.Designer.cs">
+      <DependentUpon>search.cs</DependentUpon>
     </Compile>
+    <Compile Include="user.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="user.Designer.cs">
+      <DependentUpon>user.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addBus.resx">
+      <DependentUpon>addBus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addEmp.resx">
+      <DependentUpon>addEmp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addUser.resx">
+      <DependentUpon>addUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="editBusDetails.resx">
       <DependentUpon>editBusDetails.cs</DependentUpon>
     </EmbeddedResource>
@@ -106,9 +133,6 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form3.resx">
-      <DependentUpon>Form3.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -118,8 +142,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="searchBus.resx">
-      <DependentUpon>searchBus.cs</DependentUpon>
+    <EmbeddedResource Include="search.resx">
+      <DependentUpon>search.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="user.resx">
+      <DependentUpon>user.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

@@ -46,6 +46,27 @@ namespace bmtc
             editEmployeeDetails1.Hide();
             editUsers1.Hide();
             editBusDetails1.Hide();
+            addBus1.Hide();
+            addUser1.Hide();
+            addEmp1.Hide();
+        }
+
+        private void addUser_Click(object sender, EventArgs e)
+        {
+            addUser1.Show();
+            addUser1.BringToFront();
+        }
+
+        private void addBus_Click(object sender, EventArgs e)
+        {
+            addBus1.Show();
+            addBus1.BringToFront();
+        }
+
+        private void addEmp_Click(object sender, EventArgs e)
+        {
+            addEmp1.Show();
+            addEmp1.BringToFront();
         }
     }
 }
